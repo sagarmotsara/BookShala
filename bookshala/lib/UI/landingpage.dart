@@ -1,4 +1,6 @@
+import 'package:bookshala/UI/landingpageform.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 
 class landingPage extends StatefulWidget {
   landingPage({Key key}) : super(key: key);
@@ -10,9 +12,27 @@ class landingPage extends StatefulWidget {
 class _landingPageState extends State<landingPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.yellow,
-       child: null,
+    return Scaffold(
+      body: Stack(
+        children: [
+        LandingPageForm(),
+       
+        ],
+      ),
     );
+     
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
 }

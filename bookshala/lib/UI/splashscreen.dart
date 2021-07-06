@@ -27,22 +27,32 @@ class _splashScreenState extends State<splashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey,
-      body: Center(
-        child: RichText(
-            text: TextSpan(
-                text: 'Book',
-                style: TextStyle(
-                    color: Colors.brown,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 40.0),
-                children: <TextSpan>[
-              TextSpan(
-                  text: 'Shala',
-                  style: TextStyle(
-                      color: Colors.black54,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 40.0))
-            ])),
+      body: Stack(
+        children: [
+          // image on the back of splash screen;
+
+          Image(image: AssetImage('assets/splash.jpg')),
+
+          // bookshala text part;
+
+          Center(
+            child: RichText(
+                text: TextSpan(
+                    text: 'Book',
+                    style: TextStyle(
+                        color: Colors.brown,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 40.0),
+                    children: <TextSpan>[
+                  TextSpan(
+                      text: 'Shala',
+                      style: TextStyle(
+                          color: Colors.black54,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 40.0))
+                ])),
+          ),
+        ],
       ),
     );
   }
