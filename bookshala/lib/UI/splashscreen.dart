@@ -1,6 +1,5 @@
 import 'dart:async';
-
-import 'package:bookshala/UI/landingpage.dart';
+import 'package:bookshala/UI/SignInScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -19,7 +18,7 @@ class _splashScreenState extends State<splashScreen> {
         () => Navigator.pushReplacement(
             context,
             PageTransition(
-                child: landingPage(), type: PageTransitionType.leftToRight)));
+                child: SigninScreen(), type: PageTransitionType.leftToRight)));
     super.initState();
   }
 
