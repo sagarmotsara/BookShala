@@ -1,6 +1,8 @@
+
 import 'dart:io';
 
 import 'package:bookshala/logic/uplaodfile.dart';
+import 'package:bookshala/logic/viewpdfs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_document_picker/flutter_document_picker.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
@@ -73,7 +75,13 @@ class _loggedinWidgetState extends State<loggedinWidget> {
               ),
                   ],
                 ),
-              )
+              ),
+              Padding(padding: EdgeInsets.all(10)),
+              ElevatedButton(
+ onPressed: () {
+       Navigator.push(context, MaterialPageRoute(builder: (context) => loadPdf()));
+       },
+               child: Text('view pdf')),
             ],
           ),
       ),

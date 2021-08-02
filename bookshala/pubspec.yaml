@@ -39,8 +39,12 @@ dependencies:
   page_transition: ^2.0.2
   provider: ^5.0.0
   flutter_document_picker: ^4.0.1
-  pdf_viewer_plugin: ^1.1.1
+  syncfusion_flutter_pdfviewer: ^19.2.49-beta
+
   firebase_storage: ^9.0.0
+  path_provider: ^1.1.0
+  flutter_pdfview: ^1.1.0
+  
 
 dev_dependencies:
   flutter_test:
